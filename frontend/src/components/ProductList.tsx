@@ -61,6 +61,8 @@ const ProductList: React.FC = () => {
       console.error("Error fetching products", err);
     }
   };
+  console.log("Products fetched:", products);
+  
 
   const handleChangePage = (
     event: React.MouseEvent<HTMLButtonElement> | null,

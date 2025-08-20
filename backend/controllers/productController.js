@@ -58,6 +58,8 @@ exports.deleteProduct = async (req, res) => {
 exports.updateProduct = async (req, res) => {
     const { id } = req.params;
     const { name, price, availableDate } = req.body;
+    console.log("Updating product with ID:", id, "Data:", req.body);
+    
 
     try {
         const updatedProduct = await Product.findByIdAndUpdate(
